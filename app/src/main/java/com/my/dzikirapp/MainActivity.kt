@@ -1,6 +1,5 @@
 package com.my.dzikirapp
 
-import android.app.Application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +13,7 @@ import com.my.dzikirapp.Utills.OnItemCallback
 import com.my.dzikirapp.adapter.ArtikelAdapter
 import com.my.dzikirapp.model.Artikel
 import com.my.dzikirapp.ui.DetailArtikelActivity
-import java.text.FieldPosition
+import com.my.dzikirapp.ui.SetiapSaatDzikir
 
 
 class MainActivity : AppCompatActivity() {
@@ -76,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
-            params.setMargins(8, 0, 8, 0)
+            params.setMargins(9, 0, 8, 0)
             params.gravity = Gravity.CENTER_VERTICAL
             llSliderDots.addView(sliderIndicator[i], params)
         }
@@ -139,5 +138,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        vpArtikel.unregisterOnPageChangeCallback(slidingCallback)
     }
 }

@@ -28,7 +28,7 @@
             android:name=".HarianDzikirDoa"
             android:exported="false" />
         <activity
-            android:name=".SetiapSaatDzikir"
+            android:name=".ui.SetiapSaatDzikir"
             android:exported="false" />
         <activity
             android:name=".QouliyahSholatActivity"
