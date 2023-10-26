@@ -26,7 +26,7 @@ class ArtikelAdapter : RecyclerView.Adapter<ArtikelAdapter.ArtikelViewHolder>() 
         )
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int { 
         return listArtikel.size
     }
 

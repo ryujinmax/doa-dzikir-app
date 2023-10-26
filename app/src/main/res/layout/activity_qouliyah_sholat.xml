@@ -17,7 +17,7 @@
         android:paddingEnd="16dp"
         android:paddingBottom="16dp"
         android:text="@string/txt_sunnah_qauliyah"
-        android:textColor="@color/blue"
+        android:textColor="@color/dot_blue"
         android:textSize="24sp"
         android:textStyle="bold" />
 

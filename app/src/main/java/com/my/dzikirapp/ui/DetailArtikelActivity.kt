@@ -1,7 +1,6 @@
 package com.my.dzikirapp.ui
 
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import com.my.dzikirapp.databinding.ActivityDetailArtikelBinding
 import com.my.dzikirapp.model.Artikel
@@ -13,22 +12,17 @@ class DetailArtikelActivity : AppCompatActivity() {
     private var _binding: ActivityDetailArtikelBinding? = null
     private val binding get() = _binding as ActivityDetailArtikelBinding
 
-    //companion object {
-        //const val DATA_TITLE = "title"
-        //const val DATA_DESC = "data"
-        //const val DATA_IMAGE = "image"
-    //}
-
-    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        title = "Artikel Islam"
         super.onCreate(savedInstanceState)
         _binding = ActivityDetailArtikelBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val data = when {
-            SDK_INT >= 33 -> intent.getParcelableExtra("key", Artikel::class.java)
-            else -> @Suppress("DEFECATION") intent.getParcelableExtra("key") as? Artikel
+            SDK_INT >= 33 -> intent.getParcelableExtra("data", Artikel::class.java)
+            else -> @Suppress("DEPRECATION") intent.getParcelableExtra("data") as? Artikel
         }
 
         binding.apply {
@@ -37,5 +31,10 @@ class DetailArtikelActivity : AppCompatActivity() {
             data?.imageArtikel?.let { imgDetail.setImageResource(it) }
 
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return true
     }
 }

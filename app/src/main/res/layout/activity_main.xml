@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:fontFamily="@font/arabic_arihna"
         android:text="@string/app_name"
-        android:textColor="@color/blue"
+        android:textColor="@color/dot_blue"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/arabic_arihna"
                     android:text="@string/txt_judul_fitur"
-                    android:textColor="@color/blue"
+                    android:textColor="@color/dot_blue"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="16dp"
                         android:text="@string/txt_sunnah_qauliyah"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/dot_blue"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -110,7 +110,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="16dp"
                         android:text="@string/txt_dzikir_setiap_saat"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/dot_blue"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -137,7 +137,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="16dp"
                         android:text="@string/txt_dzikir_doa_harian"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/dot_blue"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -163,7 +163,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="16dp"
                         android:text="@string/txt_dzikir_pagi_petang"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/dot_blue"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>

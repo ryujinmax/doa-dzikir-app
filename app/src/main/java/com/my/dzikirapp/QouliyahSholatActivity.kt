@@ -12,10 +12,11 @@ class QouliyahSholatActivity : AppCompatActivity() {
 
     private var _binding: ActivityQouliyahSholatBinding? = null
     private val binding get() = _binding as ActivityQouliyahSholatBinding
-    @SuppressLint("RestrictedApi")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true )
         _binding = ActivityQouliyahSholatBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -25,14 +26,13 @@ class QouliyahSholatActivity : AppCompatActivity() {
         binding.rvQauliyahShalat.layoutManager = LinearLayoutManager(this)
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressedDispatcher.onBackPressed()
-        finish()
-        return super.onSupportNavigateUp()
-    }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return true
     }
 }

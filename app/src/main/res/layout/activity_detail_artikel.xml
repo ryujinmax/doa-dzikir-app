@@ -36,7 +36,7 @@
         android:fontFamily="sans-serif-black"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:textColor="@color/blue"
+        android:textColor="@color/dot_blue"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/sv_content"
@@ -57,7 +57,7 @@
             android:fontFamily="sans-serif-black"
             android:paddingHorizontal="16dp"
             android:paddingVertical="8dp"
-            android:textColor="@color/blue"
+            android:textColor="@color/dot_blue"
             android:textSize="17sp" />
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

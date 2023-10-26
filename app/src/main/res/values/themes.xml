@@ -1,8 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Doadandzikir" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Doadandzikir" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorSurface">@color/blue</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="android:statusBarColor">@color/blue</item>
     </style>
 
     <style name="Theme.Doadandzikir" parent="Base.Theme.Doadandzikir" />
